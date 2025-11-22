@@ -36,7 +36,7 @@ const executeTransactionData = async (
     return writeContract(config, {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       abi: EVVMCafe.abi as any,
-      address: address.CafeAddress as `0x${string}`, // Cambiado de EVVMAddress a CafeAddress
+      address: address.SplittAddress as `0x${string}`, // Cambiado de EVVMAddress a SplittAddress
       functionName: "orderCoffee",
       args: [
         InputData.clientAddress,

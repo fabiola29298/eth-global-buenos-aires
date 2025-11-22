@@ -1,0 +1,28 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "client", "type": "address" },
+      {
+        "components": [
+          { "internalType": "uint256", "name": "amount", "type": "uint256" },
+          { "internalType": "string", "name": "to_identity", "type": "string" },
+          { "internalType": "address", "name": "to_address", "type": "address" }
+        ],
+        "internalType": "struct SocialSplitPay.PaymentInstruction[]",
+        "name": "instructions",
+        "type": "tuple[]"
+      },
+      { "internalType": "uint256", "name": "totalAmount", "type": "uint256" },
+      { "internalType": "uint256", "name": "serviceNonce", "type": "uint256" },
+      { "internalType": "bytes", "name": "clientSignature", "type": "bytes" },
+      { "internalType": "uint256", "name": "priorityFee_EVVM", "type": "uint256" },
+      { "internalType": "uint256", "name": "nonce_EVVM", "type": "uint256" },
+      { "internalType": "bool", "name": "priorityFlag_EVVM", "type": "bool" },
+      { "internalType": "bytes", "name": "signature_EVVM", "type": "bytes" }
+    ],
+    "name": "executeSplitPayment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

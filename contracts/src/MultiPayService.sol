@@ -1,7 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
-
-import "@evvm/testnet-contracts/src/interfaces/IEvvm.sol"; // O la importación que uses
+ 
+import {IEvvm} from "@evvm/testnet-contracts/interfaces/IEvvm.sol";
+import {SignatureRecover} from "@evvm/testnet-contracts/library/SignatureRecover.sol";
+import {Strings} from "@openzeppelin/contracts/utils/Strings.sol";
+import {StakingServiceHooks} from "@evvm/testnet-contracts/library/StakingServiceHooks.sol";
 
 contract MultiPayService {
     address public evvmAddress;
@@ -32,7 +35,7 @@ contract MultiPayService {
         }
 
         // Llamada a EVVM para ejecutar los pagos (simulado aquí)
-        IEvvm(evvmAddress).pay{value: msg.value}();
+        //IEvvm(evvmAddress).pay{value: msg.value}();
     }
 
     // Función para verificar la firma (esto es solo un ejemplo básico)
