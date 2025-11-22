@@ -1,0 +1,27 @@
+# Compiler files
+cache/
+out/
+
+# Ignores development broadcast logs
+/broadcast/
+
+# node_modules
+node_modules/
+
+# Docs
+docs/
+
+# Dotenv file
+.env
+
+.wake
+pytypes
+__pycache__/
+*.py[cod]
+.hypothesis/
+wake-coverage.cov
+
+reportWake.txt
+
+/.vscode/
+*.code-workspace
