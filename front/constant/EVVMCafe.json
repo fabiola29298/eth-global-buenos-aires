@@ -1,0 +1,118 @@
+{
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_evvmAddress",
+          "type": "address",
+          "internalType": "address"
+        },
+        { "name": "_ownerOfShop", "type": "address", "internalType": "address" }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "getAmountOfEtherInShop",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getAmountOfPrincipalTokenInShop",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getEtherAddress",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "pure"
+    },
+    {
+      "type": "function",
+      "name": "getEvvmAddress",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getOwnerOfShop",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getPrincipalTokenAddress",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "pure"
+    },
+    {
+      "type": "function",
+      "name": "isThisNonceUsed",
+      "inputs": [
+        {
+          "name": "clientAddress",
+          "type": "address",
+          "internalType": "address"
+        },
+        { "name": "nonce", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "orderCoffee",
+      "inputs": [
+        {
+          "name": "clientAddress",
+          "type": "address",
+          "internalType": "address"
+        },
+        { "name": "coffeeType", "type": "string", "internalType": "string" },
+        { "name": "quantity", "type": "uint256", "internalType": "uint256" },
+        { "name": "totalPrice", "type": "uint256", "internalType": "uint256" },
+        { "name": "nonce", "type": "uint256", "internalType": "uint256" },
+        { "name": "signature", "type": "bytes", "internalType": "bytes" },
+        {
+          "name": "priorityFee_EVVM",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        { "name": "nonce_EVVM", "type": "uint256", "internalType": "uint256" },
+        { "name": "priorityFlag_EVVM", "type": "bool", "internalType": "bool" },
+        { "name": "signature_EVVM", "type": "bytes", "internalType": "bytes" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "withdrawFunds",
+      "inputs": [
+        { "name": "to", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "withdrawRewards",
+      "inputs": [
+        { "name": "to", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    { "type": "error", "name": "InvalidSignature", "inputs": [] },
+    { "type": "error", "name": "NonceAlreadyUsed", "inputs": [] }
+  ]
+}

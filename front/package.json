@@ -9,7 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@evvm/viem-signature-library": "^2.1.1",
     "@radix-ui/react-slot": "^1.2.4",
+    "@reown/appkit-adapter-wagmi": "^1.8.14",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "ethers": "^6.15.0",
@@ -19,7 +21,7 @@
     "react-dom": "19.2.0",
     "tailwind-merge": "^3.4.0",
     "viem": "^2.39.3",
-    "wagmi": "^3.0.1"
+    "wagmi": "^2.12.31"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

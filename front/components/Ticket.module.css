@@ -1,0 +1,163 @@
+/* Estilo de ticket de papel para los recibos */
+.receiptContainer {
+  background: linear-gradient(to bottom, #f8f8f8 0%, #ffffff 10%, #ffffff 90%, #f0f0f0 100%);
+  border: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 20px 15px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de perforaciones en la parte superior */
+.receiptContainer::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: radial-gradient(circle at 10px 5px, transparent 3px, #f8f8f8 3px);
+  background-size: 20px 10px;
+  background-repeat: repeat-x;
+}
+
+/* Efecto de perforaciones en la parte inferior */
+.receiptContainer::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: radial-gradient(circle at 10px 5px, transparent 3px, #f8f8f8 3px);
+  background-size: 20px 10px;
+  background-repeat: repeat-x;
+}
+
+/* Encabezados de secciones del recibo */
+.receiptSection {
+  border-bottom: 1px dashed #999;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.receiptSection:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* Título del recibo */
+.receiptTitle {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Líneas del recibo */
+.receiptLine {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 2px 0;
+}
+
+.receiptLabel {
+  font-weight: bold;
+  color: #333;
+}
+
+.receiptValue {
+  color: #666;
+  word-break: break-all;
+  max-width: 60%;
+  text-align: right;
+}
+
+/* Estilo especial para valores importantes */
+.receiptHighlight {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Firma - estilo especial para mostrar firmas completas */
+.receiptSignature {
+  font-size: 9px;
+  color: #888;
+  font-family: monospace;
+  word-break: break-all;
+  max-width: 60%;
+  text-align: right;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+/* Estilo especial para firmas largas que ocupan toda la línea */
+.receiptSignatureFull {
+  font-size: 8px;
+  color: #666;
+  font-family: monospace;
+  word-break: break-all;
+  width: 100%;
+  text-align: left;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+  padding: 5px 0;
+  border-left: 2px solid #ddd;
+  padding-left: 8px;
+  margin-top: 3px;
+}
+
+/* Línea separadora decorativa */
+.receiptDivider {
+  border: none;
+  border-top: 2px dashed #ccc;
+  margin: 15px 0;
+}
+
+/* Efecto de papel ligeramente arrugado */
+.receiptContainer {
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.02) 0%, transparent 50%);
+}
+
+/* Animación sutil de aparición */
+.receiptContainer {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+  .receiptContainer {
+    max-width: 280px;
+    padding: 15px 10px;
+    font-size: 11px;
+  }
+  
+  .receiptTitle {
+    font-size: 13px;
+  }
+}
