@@ -153,7 +153,7 @@ export default function MultiPaymentComponent() {
         ],
         chain: undefined, // Opcional, walletClient ya sabe la chain
         account: address,  // Explícito para evitar dudas
-        
+        gas: BigInt(5000000), 
       });
 
       setTxHash(hash);

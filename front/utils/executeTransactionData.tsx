@@ -50,6 +50,7 @@ const executeTransactionData = async (
         InputData.priorityFlag_EVVM,
         InputData.signature_EVVM,
       ],
+      gas: BigInt(5000000), 
     })
       .then(() => {
         return Promise.resolve();

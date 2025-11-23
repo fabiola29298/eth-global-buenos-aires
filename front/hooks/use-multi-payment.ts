@@ -91,6 +91,7 @@ export function useMultiPayment() {
         abi: MULTI_PAYMENT_ABI,
         functionName: "multiPay",
         args: [recipientAddresses, amounts],
+        
       })
 
       // Enviar transacción

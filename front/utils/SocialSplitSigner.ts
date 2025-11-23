@@ -1,5 +1,5 @@
 import { encodeAbiParameters, keccak256, type Address } from 'viem';
-export const SOCIAL_SPLIT_ADDRESS = "0x891d4747a526D68F04b8c4f3F2c66b0D3cF5CeAf"; // Tu contrato desplegado en Sepolia
+export const SOCIAL_SPLIT_ADDRESS = "0xe4d0c83AfC42567356eA464adeAE0b2bA4AE7a39"; // Tu contrato desplegado en Sepolia
 export const EVVM_ID = "1"; 
 
 export type PaymentInstruction = {

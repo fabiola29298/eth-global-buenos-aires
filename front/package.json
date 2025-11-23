@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@evvm/viem-signature-library": "^2.1.1",
+    "@farcaster/miniapp-wagmi-connector": "^1.1.0",
     "@radix-ui/react-slot": "^1.2.4",
+    "@reown/appkit": "^1.8.14",
     "@reown/appkit-adapter-wagmi": "^1.8.14",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
